@@ -27,7 +27,7 @@ const samih = JSON.parse(fs.readFileSync('./src/simi.json'))
 const vcard = 'BEGIN:VCARD\n' // ANAK ANJING MAU NGAPAIN?
             + 'VERSION:3.0\n' // NGAPAIN LAGI KALO GA MAU NUMPANG NAMA DOANG XIXIXIXI
             + 'FN:Ferdi\n' // MENDING LU TOBAT SU!
-            + 'ORG:Owner F4SXD;\n' // KASIH CREDITS GUA SU!!!
+            + 'ORG:Ownernya TASYAA;\n' // KASIH CREDITS GUA SU!!!
             + 'TEL;type=CELL;type=VOICE;waid=6282169369877:+62 821-6936-9877\n' // JANGAN KEK BABI SU
             + 'END:VCARD'
 prefix = '!'
@@ -124,7 +124,7 @@ async function starts() {
 			client.chatRead (from)
 
 			mess = {
-				wait: '⌛ Sedang di Prosess ⌛',
+				wait: '⚠️ Sedang di Prosess ⚠️',
 				success: '✔️ Berhasil ✔️',
 				error: {
 					stick: '❌ Gagal, terjadi kesalahan saat mengkonversi gambar ke sticker ❌',
@@ -190,7 +190,7 @@ async function starts() {
 				case 'info':
 					me = client.user
 					uptime = process.uptime()
-					teks = `*Nama bot* : ${me.name}\n*OWNER* : *FERDI ARDIAN*\n*AUTHOR* : F4Sferr\n*Nomor Bot* : @${me.jid.split('@')[0]}\n*Prefix* : ${prefix}\n*Total Block Contact* : ${blocked.length}\n*The bot is active on* : ${kyun(uptime)}`
+					teks = `*BOT NAME* : ${me.name}\n*OWNER* : *FERDI ARDIAN*\n*AUTHOR* : *TASYAA*\n*BOT NUMBER* : @${me.jid.split('@')[0]}\n*PREFIX* : *${prefix}*\n*TOTAL BLOCK CONTACT* : *${blocked.length}*\n*BOT AKTIVITED* : *${kyun(uptime)}*`
 					buffer = await getBuffer(me.imgUrl)
 					client.sendMessage(from, buffer, image, {caption: teks, contextInfo:{mentionedJid: [me.jid]}})
 					break
@@ -217,7 +217,7 @@ async function starts() {
 								fs.unlinkSync(media)
 							})
 					} else {
-						reply('Foto aja bre')
+						reply('Foto ae cok')
 					}
 					break
 				case 'stiker':
