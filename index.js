@@ -426,7 +426,7 @@ async function starts() {
 					teks = body.slice(12)
 					if (teks.length > 8) return reply('Teksnya kepanjangan, maksimal 8 karakter')
 					reply(mess.wait)
-					buffer = await getBuffer(`https://api.vhtear.com/galaxytext?text=${teks}&apikey=ANTIGRATISNIHANJENKKK`)
+					buffer = await getBuffer(`https://api.vhtear.com/galaxytext?text=${teks}&apikey=5d9e6da082904e148f0fe4b3f0587004`)
 					client.sendMessage(from, buffer, image, {quoted: mek})
 					break
                 case 'phlogo':
@@ -443,7 +443,7 @@ async function starts() {
 					var gh = body.slice(14)
 					var gbl1 = gh.split("|")[0];
 					var gbl2 = gh.split("|")[1];
-					anu = await fetchJson(`https://api.vhtear.com/primbonjodoh?nama=${gbl1}&pasangan=${gbl2}&apikey=ANTIGRATISNIHANJENKKK`)
+					anu = await fetchJson(`https://api.vhtear.com/primbonjodoh?nama=${gbl1}&pasangan=${gbl2}&apikey=5d9e6da082904e148f0fe4b3f0587004`)
 					reply(anu.result.hasil)
 					break
 				case 'ramaljadian':
