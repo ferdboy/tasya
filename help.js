@@ -214,20 +214,19 @@ const help = (prefix) => {
 ┣━━━━ *❬ SOSMED ❭* ━━━━
 ┃
 ┃ *Ada masalah? Hub :*
-┃ _http://wa.me/6288221608614_
-┃ *Instagram :* @nur.fdhl_
-┃ *YouTube :*
-┃ _Fadhil Graphy_
-┃ *Twitter :* @nurfdhl_
+┃ *http://wa.me/6282169369877*
+┃ *Instagram :* *@ferdi_ardian21*
+┃ *YouTube :* *NOTHING*
+┃  *Twitter :* @nurfdhl_
 ┃
 ┣━━━━ *❬ NOTE ❭* ━━━━━━⊱
 ┃
-┃*Gunakan bot seperlu dan sebaik mungkin*
-┃*Bot masih tahap pengerjaan*
-┃*Jadi kalo error maaf awoakwoakwok*
+┃ *Gunakan bot seperlu dan sebaik mungkin*
+┃ *Bot masih tahap pengerjaan*
+┃ *Jadi kalo error maaf awoakwoakwok*
 ┃
-┣━━━━━━━━━━━━━━━━━━━━┓
+┣━━━━━━━━━━━━━━━━━━━━━━
 ┃ *❬ POWERED BY KASEKABOT ❭*
-┗━━━━━━━━━━━━━━━━━━━━┛`
+┗━━━━━━━━━━━━━━━━━━━━━━`
 }
 exports.help = help
