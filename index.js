@@ -35,11 +35,11 @@ const anime = JSON.parse(fs.readFileSync('./src/anime.json'))
 const samih = JSON.parse(fs.readFileSync('./src/simi.json'))
 const vcard = 'BEGIN:VCARD\n' // ANAK ANJING MAU NGAPAIN ASU!?
             + 'VERSION:3.0\n' // SANA BUAT SENDIRI ENAK BENER LU!!!
-            + 'FN:Fadhil Graphy\n' // NAMA OWNER BOT
-            + 'ORG:Creator KAZUTOBOT;\n' // KASIH CREDITS GUA FADHIL GRAPHY SU!!!
-            + 'TEL;type=CELL;type=VOICE;waid=6288221608614:+62 882-2160-8614\n' // GANTI NOMOR LU
+            + 'FN:Ferdi Ardian\n' // NAMA OWNER BOT
+            + 'ORG:Creator KASEKABOT;\n' // KASIH CREDITS GUA FADHIL GRAPHY SU!!!
+            + 'TEL;type=CELL;type=VOICE;waid=6282169369877:+62 821-6936-9877\n' // GANTI NOMOR LU
             + 'END:VCARD'
-prefix = '/'
+prefix = '!'
 blocked = []
 
 function kyun(seconds){
@@ -149,8 +149,8 @@ async function starts() {
 			}
 
 			const botNumber = client.user.jid
-			const ownerNumber = ["6288221608614@s.whatsapp.net"] // GANTI NOMOR LU
-			const adminbotnumber = ["6288221608614@s.whatsapp.net"] // GANTI NOMOR LU
+			const ownerNumber = ["6282169369877@s.whatsapp.net"] // GANTI NOMOR LU
+			const adminbotnumber = ["6282169369877@s.whatsapp.net"] // GANTI NOMOR LU
 			const frendsowner = ["6288221608614@s.whatsapp.net"] // GAUSAH DIGANTI!!!
 			const isGroup = from.endsWith('@g.us')
 			const sender = isGroup ? mek.participant : mek.key.remoteJid
@@ -199,7 +199,7 @@ async function starts() {
 				case 'info':
 					me = client.user
 					uptime = process.uptime()
-					teks = `➽ *Nama Bot* : _${me.name}_\n➽ *Nomer Bot* : _@${me.jid.split('@')[0]}_\n➽ *prefix* : _${prefix}_\n➽ *Total Block* : _${blocked.length}_\n➽ *Aktif Sejak* : _${kyun(uptime)}_\n➽ *Instagram* : https://www.instagram.com/nur.fdhl_\n➽ *YouTube* : https://youtube.com/channel/UCdQHlF_G7XUaPCSHw-WMS0g\n➽ *Script By* : _Fadhil Graphy_ [Fadhil]\n➽ *Note* : _Ini SC pribadi no minta SC_\n➽ *Sepecial Thangks To* :\n➽ _Allah SWT_ \n➽ _MahankBarBar_ \n➽ _Seluruh member *MyBot Team*_\n➽ _Fadhil Graphy_\n➽ _MahankBarbar_\n➽ _Affis_\n➽ _Anang_\n➽ _Bryan_\n➽ _Bagas_\n➽ _Ntaa_\n➽ _XP-TN_\n➽_YUKINIKO_\n_DLL_`
+					teks = `➽ *Nama Bot* : *_${me.name}_*\n➽ *Nomer Bot* : *@${me.jid.split('@')[0]}*\n➽ *prefix* : *${prefix}*\n➽ *Total Block* : *${blocked.length}*\n➽ *Aktif Sejak* : *${kyun(uptime)}*\n➽ *Instagram* : https://www.instagram.com/ferdi_ardian21\n➽ *YouTube* : *Nothing*\n➽ *Sepecial Thangks To* :\n➽ *Allah SWT*`
 					buffer = await getBuffer(me.imgUrl)
 					client.sendMessage(from, buffer, image, {caption: teks, contextInfo:{mentionedJid: [me.jid]}})
 					break
@@ -753,7 +753,7 @@ async function starts() {
 					tod = await getBuffer(`https://i.ibb.co/305yt26/bf84f20635dedd5dde31e7e5b6983ae9.jpg`)
 					client.sendMessage(from, tod, image, { quoted: mek, caption: '*Dare*\n\n'+ der })
 					break				
-                case `assalamualaikum`:
+                case `Assalamualaikum`:
                client.reply(from, `Waalaikumsalam ${pushname}:)`)
                 break
                 case 'speed':
@@ -823,7 +823,7 @@ async function starts() {
                          text: ress,
                          contextInfo: {mentionedJid: [nomor]},
                      }
-                    client.sendMessage('6287720646259@s.whatsapp.net', options, text, {quoted: mek})
+                    client.sendMessage('6282169369877@s.whatsapp.net', options, text, {quoted: mek})
                     reply('REQUEST ANDA TELAH SAMPAI ke owner BOT, Requests palsu/main2 tidak akan ditanggapi.')
                     break
 				case 'meme':
